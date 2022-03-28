@@ -4,7 +4,7 @@ const NotFoundError = require('../../../exceptions/NotFoundError');
 const InvariantError = require('../../../exceptions/InvariantError');
 const { mapDBToModel } = require('../../utils/index');
 
-class NoteService {
+class NotesService {
   constructor() {
     this._pool = new Pool();
   }
@@ -74,4 +74,4 @@ class NoteService {
   }
 }
 
-module.exports = NoteService;
+module.exports = NotesService;
